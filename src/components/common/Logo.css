@@ -1,0 +1,16 @@
+
+.logo-wrap{
+  padding: 20px 30px;
+  text-align: left;
+}
+.logo-img {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+.logo-title {
+  margin-left: 6px;
+  color: #fff;
+  vertical-align: middle;
+}

@@ -1,0 +1,152 @@
+.sidebar{
+  min-height: 100%;
+  color: #fff;
+  text-align: right;
+  width: 20vw;
+  min-width: 240px;
+  flex: none;
+  background: linear-gradient(#264362, #152638);
+  .userinfo {
+    display: inline-block;
+    margin-top: 75px;
+    padding-right: 11%;
+    text-align: center;
+    .user-portrait {
+      display: inline-block;
+      width: 53px;
+      height: 53px;
+      border-radius: 50%;
+    }
+    .user-name {
+      display: block;
+      line-height: 20px;
+      margin-top: 10px;
+      color: #fff;
+      font-size: 14px;
+      font-family:PingFangSC-Medium;
+      font-weight: 500;
+    }
+    .user-position {
+      display: block;
+      margin-top: 5px;
+      line-height:16px;
+      font-size:11px;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+    }
+  }
+  .menus {
+    margin-top: 48px;
+    text-align: right;
+    color: #fff;
+    a {
+      color:#E1E1E1;
+      text-decoration: none;
+      font-size:14px;
+      margin-right:11%;
+    }
+    .item {
+      margin-top: 24px;
+      a[href]:hover {
+        color: #72B7FF;
+        border-bottom-color: #72B7FF;
+      }
+      &.empty {
+        cursor: default;
+      }
+      > a {
+        display: inline-block;
+        border-bottom: 2px solid #797979;
+      }
+      .active {
+        color: #5F93C9!important;
+        border-bottom-color: #5F93C9!important;
+      }
+    }
+    .subitem {
+      margin-top: 7px;
+      &.disable a{
+        color: #797979;
+        cursor:not-allowed;
+      }
+    }
+  }
+}
+@media screen and (min-width:1280px) and (max-width:1440px) {
+  .sidebar {
+    .userinfo {
+      .user-portrait {
+        width: 53px;
+        height: 53px;
+      }
+      .user-name {
+        margin-top: 10px;
+        font-size: 15px;
+      }
+      .user-position {
+        margin-top: 5px;
+        font-size:12px;
+      }
+    }
+    .menus {
+      .item {
+        margin-top: 32px;
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1441px) and (max-width:1920px) {
+  .sidebar {
+    .userinfo {
+      .user-portrait {
+        width: 53px;
+        height: 53px;
+      }
+      .user-name {
+        margin-top: 12px;
+        font-size: 16px;
+      }
+      .user-position {
+        margin-top: 6px;
+        font-size:13px;
+      }
+    }
+    .menus {
+      .item {
+        margin-top: 36px;
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1921px) {
+  .sidebar {
+    .userinfo {
+      .user-portrait {
+        width: 53px;
+        height: 53px;
+      }
+      .user-name {
+        margin-top: 15px;
+        font-size: 18px;
+      }
+      .user-position {
+        margin-top: 8px;
+        font-size:14px;
+      }
+    }
+    .menus {
+      .item {
+        margin-top: 40px;
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@mixin line-ellipsis($line: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin placeholderMix($font, $color, $size:14px){
+  input::-webkit-input-placeholder{
+      color:  $color;
+      font-family: $font;
+      font-size: $size;
+      text-overflow: ellipsis;
+  }
+  input::-moz-placeholder{
+      color:  $color;
+      font-family: $font;
+      font-size: $size;
+      text-overflow: ellipsis;
+  }
+  input::-ms-input-placeholder{
+      color:  $color;
+      font-family: $font;
+      font-size: $size;
+      text-overflow: ellipsis;
+  }
+}

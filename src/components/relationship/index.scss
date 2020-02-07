@@ -1,0 +1,105 @@
+.container {
+  .header {
+    position: relative;
+    .timer {
+      .icon-clock {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .title {
+    color: #454545;
+    font-size: 22px;
+    font-weight:500;
+    line-height:30px;
+  }
+  .caption {
+    margin-top: 12px;
+    font-size:20px;
+    font-weight:500;
+    color:#868686;
+    line-height:28px;
+  }
+  table {
+    table-layout: fixed;
+    thead tr{
+      th:nth-child(1){
+        width: 150px;
+      }
+      th:nth-child(2){
+        width: 120px;
+      }
+      th:nth-child(3){
+        width: 150px;
+      }
+    }
+    margin-top: 10px;
+    td,th{
+      text-align: left;
+      box-sizing: border-box;
+    }
+    .order {
+      text-align: center
+    }
+    .result {
+      min-width: 280px;
+      white-space: nowrap;
+      .wrong {
+        label {
+          width: auto;
+          margin-right: 11px;
+        }
+        .select {
+          width: 150px;
+          height: 22px;
+          line-height: 20px;
+        }
+      }
+      .item {
+        display: inline-block;
+        width: 40%;
+        + .item {
+          margin-left: 15px;
+        }
+      }
+      label {
+        display: inline-block;
+        width: 40%;
+        cursor: pointer;
+        input {
+          vertical-align: middle;
+          margin-right: 7px;
+        }
+        + label {
+          margin-left: 15px;
+        }
+      }
+      .detail {
+        margin-left: 10px;
+      }
+    }
+    .finalCheck {
+      white-space: nowrap;
+      label {
+        cursor: pointer;
+        input {
+          margin-right: 16px;
+          margin-bottom: 2px;
+          vertical-align: middle;
+        }
+        + label {
+          margin-left: 60px;
+        }
+      }
+    }
+  }
+  .buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+}

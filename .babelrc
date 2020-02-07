@@ -1,0 +1,9 @@
+{
+  presets: 'babel-preset-react-app',
+  plugins: [
+    // you can use decorator for react-css-modules out of box
+    'babel-plugin-transform-decorators-legacy',
+    // only bundle needed antd components/styles
+    ['babel-plugin-import', [{ libraryName: 'antd', style: 'css' }]],
+  ]
+}

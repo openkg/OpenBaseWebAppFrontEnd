@@ -1,0 +1,128 @@
+.map-container{
+  position: relative;
+  height: 100%;
+  color:#454545;
+}
+.map-head{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+
+
+
+  .tab-pannal{
+    display: flex;
+    .panal-item{
+      font-weight: bold;
+      &.active{
+        color:#4081E5;
+      }
+      &:first-child{
+        margin-right: 25px;
+      }
+      font-size: 18px;
+      height: 25px;
+      line-height: 25px;
+      padding-top: 2px;
+      cursor: pointer;
+    }
+  }
+}
+
+.map-body{
+  height: calc(100% - 70px);
+  padding-top: 15px;
+  position: relative;
+  .map-graph{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    .graph-box{
+      height: calc(100% - 50px);
+      display: flex;
+      justify-content: space-between;
+      .graph-wrap{
+        flex: 2;
+        margin-right: 15px;
+        position: relative;
+        box-shadow:0px 2px 8px 0px #c3d2d8;
+        h3{
+          font-size: 19px;
+          line-height: 25px;
+          position: absolute;
+          padding-top: 18px;
+          background-color: #fff;
+          top: 0;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          z-index: 1;
+        }
+        &.full-width{
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+      .chat-wrap{
+        flex: 1;
+        max-width: 400px;
+        border-radius:3px;
+        border:1px solid #4081E5;
+      }
+
+      .switch-box{
+        position: absolute;
+        right: -90px;
+        top: 13px;
+        padding-right: 21px;
+        cursor: pointer;
+        .text{
+          font-size: 12px;
+          color: #3F81E5;
+        }
+        .icon-switch{
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 21px;
+          height: 25px;
+          border-radius:2px;
+          background-color: transparent;
+          &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-2px,-50%);
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-right-color: #3F81E5;
+          }
+        }
+      }
+    }
+    .graph-info{
+      display: none;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      position: absolute;
+      width: 100%;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .map-list{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 70px 80px 18px;
+    background-color: #fff;
+    box-shadow: 0px 2px 9px #C3D2D8;
+  }
+}
+
+

@@ -1,0 +1,41 @@
+.tips-box{
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 30px;
+  .icon-figure{
+    position: absolute;
+    top: 14px;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 21px;
+    background-size: contain;
+    background-position: center center;
+    left: 5px;
+    background-image: url(../../assets/images/icon-robot.png);
+  }
+  .main{
+    font-size:14px;
+    line-height:18px;
+    font-weight:400;
+    border-radius:5px;
+    color:#FFF;
+    padding: 5px 10px;
+    max-width: calc(100% - 50px);
+    word-break: break-all;
+    display: inline-block;
+    text-align: left;
+    background-color: #5796D7;
+    line-height: 22px;
+  }
+  .tips-head{
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .tips-msg{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 13px;
+    padding-left: 10px;
+  }
+}

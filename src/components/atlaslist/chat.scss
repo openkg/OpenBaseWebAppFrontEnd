@@ -1,0 +1,146 @@
+.chat{
+  position: relative;
+  height: 100%;
+  ::-webkit-scrollbar-track-piece {
+    background:#f1f4f5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #f1f4f5;
+    outline: 2px solid #f1f4f5;
+    border: 2px solid #f1f4f5;
+  }
+  .head{
+    height: 50px;
+    position: relative;
+    .switch-box{
+      position: absolute;
+      padding: 13px 0 0 8px;
+      cursor: pointer;
+      .text{
+        color:#3F81E5;
+        font-size: 12px;
+      }
+      .icon-switch{
+        width: 21px;
+        height: 25px;
+        border-radius:2px;
+        position: absolute;
+        background-color: transparent;
+        &::before{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(7px,-50%);
+          width: 0;
+          height: 0;
+          border: 8px solid transparent;
+          border-left-color: #3f81e5;
+        }
+      }
+    }
+
+    h4{
+      padding: 19px 0 6px;
+      height:25px;
+      font-size:18px;
+      color:#38393B;
+      font-weight:400;
+      line-height:23px;
+      letter-spacing:1px;
+      text-align:center;
+    }
+  }
+
+
+  .chat-box{
+    padding: 18px 0 14px;
+    height: calc(100% - 114px);
+    overflow-y: scroll;
+    background:#f1f4f5;
+    border-radius:2px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    .chat-item{
+      margin-bottom: 18px;
+      box-sizing: border-box;
+      position: relative;
+      .main{
+        font-size:14px;
+        line-height:18px;
+        font-weight:400;
+        border-radius:5px;
+        color:#FFF;
+        padding: 5px 10px;
+        max-width: calc(100% - 50px);
+        word-break: break-all;
+        display: inline-block;
+        text-align: left;
+      }
+      .icon-figure{
+        position: absolute;
+        top: 14px;
+        transform: translateY(-50%);
+        width: 21px;
+        height: 21px;
+        background-size: contain;
+        background-position: center center;
+        background-image: url(../../assets/images/icon-robot.png);
+      }
+
+      &.robot{
+        text-align: left;
+        padding-left: 30px;
+        .main{
+          background-color: #5796D7;
+          .icon-figure{
+            left: 5px;
+          }
+        }
+      }
+
+      &.client{
+        text-align: right;
+        padding-right: 30px;
+        .main{
+          background-color: #8BA3C9;
+          .icon-figure{
+            right: 5px;
+            border-radius: 50%;
+          }
+        }
+      }
+
+    }
+  }
+
+
+  .send{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0 19px 18px 29px;
+    display: flex;
+    box-sizing: border-box;
+    input[name="content"]{
+      flex: 1;
+      margin-right: 17px;
+      height:30px;
+      border-radius:4px;
+      outline:none;
+      padding-left: 8px;
+      border:1px solid #5796d7;
+    }
+
+    input[name="submit"]{
+      width:47px;
+      height:30px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background:#4081e5;
+      border-radius:4px;
+      color:#fff;
+    }
+  }
+}

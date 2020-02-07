@@ -1,0 +1,23 @@
+.buttons {
+  margin-top: 42px;
+  text-align: center;
+  button{
+    &.pre-btn{
+      margin-right: 25px;
+      border:1px solid #357ae4;
+      color: #357AE4;
+      background-color: #fff;
+    }
+    &.next-btn{
+      background-color: #357AE4;
+      color:#fff;
+    }
+    &.not-allowed{
+      // cursor: not-allowed;
+      display: none;
+    }
+    &:not(.not-allowed):hover{
+      opacity: .8;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.container {
+  .header {
+    position: relative;
+    .timer {
+      .icon-clock {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .title {
+    color: #454545;
+    font-size: 22px;
+    font-weight:500;
+    line-height:30px;
+  }
+  .caption {
+    margin-top: 12px;
+    font-size:20px;
+    font-weight:500;
+    color:#868686;
+    line-height:28px;
+  }
+  table {
+    margin-top: 10px;
+    td,th{
+      text-align: left;
+    }
+    .order {
+      text-align: center
+    }
+    .result {
+      white-space: nowrap;
+      span {
+        + span {
+          margin-left: 15px;
+        }
+      }
+    }
+    .finalCheck {
+      white-space: nowrap;
+      label {
+        cursor: pointer;
+        input {
+          margin-right: 16px;
+          margin-bottom: 2px;
+          vertical-align: middle;
+        }
+        + label {
+          margin-left: 60px;
+        }
+      }
+    }
+  }
+  .buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,59 @@
+.dialog-wrap {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 428px;
+  height: 220px;
+  color: #fff;
+  border-radius:2px;
+  background-color: #fff;
+  overflow: hidden;
+  .header {
+    padding: 10px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0 65px;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: #3477C1;
+    background: url(../../assets/images/bg-modal.jpg) no-repeat;
+    background-size: cover;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .icon-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    line-height: 17px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #C3C3C3;
+    border-radius: 50%;
+    font-style: normal;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+}
+.pop-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.4576);
+}
