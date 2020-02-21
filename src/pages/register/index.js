@@ -36,7 +36,8 @@ class Index extends React.PureComponent {
   }
   componentDidMount() {
     /* eslint {"no-new": "off", "no-undef": "off"} */
-    new TencentCaptcha(document.getElementById('TencentCaptchaBtn'), 'APPID', res => {  // replace APPID with your own tencent captcha appid
+    new TencentCaptcha(document.getElementById('TencentCaptchaBtn'), 'APPID', res => {
+      // replace APPID with your own tencent captcha appid
       this.getCode(window.form, res.ticket, res.randstr);
     });
   }

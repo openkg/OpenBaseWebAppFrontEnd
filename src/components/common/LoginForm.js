@@ -79,7 +79,8 @@ class LoginForm extends React.PureComponent {
     if (loginType === 2) {
       requestAnimationFrame(() => {
         /* eslint {"no-new": "off", "no-undef": "off"} */
-        new TencentCaptcha(document.getElementById('TencentCaptchaBtn'), 'APPID', res => {  // replace APPID with your own tencent captch appid
+        new TencentCaptcha(document.getElementById('TencentCaptchaBtn'), 'APPID', res => {
+          // replace APPID with your own tencent captch appid
           this.getCode(window.form, res.ticket, res.randstr);
         });
       });
