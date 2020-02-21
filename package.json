@@ -38,10 +38,6 @@
     "swiper": "^4.4.1"
   },
   "devDependencies": {
-    "@mi/eslint-config-mcfe-react-app": "^1.2.0",
-    "@mi/goku": "^2.1.2",
-    "@mi/mcfe-react-dev-utils": "^3.0.0-8",
-    "@mi/mcfe-react-error-overlay": "^1.0.7-1",
     "autoprefixer": "^7.1.0",
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.1.2",
@@ -82,7 +78,6 @@
     "prettier": "^1.19.1",
     "promise": "^7.1.1",
     "prop-types": "^15.6.2",
-    "react-css-modules": "^4.3.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.17.0",
     "sw-precache-webpack-plugin": "^0.9.1",
