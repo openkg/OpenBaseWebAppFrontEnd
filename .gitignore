@@ -27,3 +27,6 @@ yarn-error.log*
 *local.md
 *LOCAL.md
 package-lock.json
+
+# vs code
+/.vscode/

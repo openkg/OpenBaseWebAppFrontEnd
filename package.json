@@ -38,6 +38,10 @@
     "swiper": "^4.4.1"
   },
   "devDependencies": {
+    "@mi/eslint-config-mcfe-react-app": "^1.2.0",
+    "@mi/goku": "^2.1.2",
+    "@mi/mcfe-react-dev-utils": "^3.0.0-8",
+    "@mi/mcfe-react-error-overlay": "^1.0.7-1",
     "autoprefixer": "^7.1.0",
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.1.2",
@@ -70,7 +74,7 @@
     "husky": "^0.14.3",
     "jest": "^20.0.3",
     "json-server": "^0.14.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.1",
     "object-assign": "^4.1.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-flexbugs-fixes": "^3.0.0",
@@ -83,7 +87,7 @@
     "sw-precache-webpack-plugin": "^0.9.1",
     "url-loader": "^0.5.8",
     "webpack": "^2.6.1",
-    "webpack-dev-server": ">=3.1.11",
+    "webpack-dev-server": "^2.9.7",
     "webpack-manifest-plugin": "^1.1.0",
     "whatwg-fetch": "^2.0.3",
     "write-file-webpack-plugin": "^4.2.0"
