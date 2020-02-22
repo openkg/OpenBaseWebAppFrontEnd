@@ -52,20 +52,30 @@
 ### 项目运行
 
 - 安装依赖
+下载node全依赖包:
+http://cnbj1.fds.api.xiaomi.com/openbase-jsonld-data/node_modules.zip
 
 解压 node_modules.zip 到当前路径下
 
-- 启动服务端
+运行如下npm命令:
 
-```
-npm run server
-```
+npm uninstall --save-dev node-sass
+npm install --save-dev node-sass
+
+npm install --save-dev webpack-dev-server@2.9.7
+
+建议打开项目在visual studio code中时，安装并运行prettier插件。
 
 - 启动项目
 
 ```
-npm start
+npm run start
 ```
+
+- 编译项目
+
+```
+npm run build
 
 启动成功后，打开浏览器访问：http://localhost:3000/
 
