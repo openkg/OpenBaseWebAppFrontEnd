@@ -60,6 +60,7 @@ http://cnbj1.fds.api.xiaomi.com/openbase-jsonld-data/node_modules.zip
 运行如下npm命令:
 
 npm uninstall --save-dev node-sass
+
 npm install --save-dev node-sass
 
 npm install --save-dev webpack-dev-server@2.9.7
